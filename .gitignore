@@ -1,3 +1,13 @@
+# directories, large, or ininformative files
+results/*.bam
+results/spades/*
+.snakemake/
+*.sam
+*.log
+*.fastq.gz
+.DS_Store
+
+
 # History files
 .Rhistory
 .Rapp.history

@@ -1,0 +1,13 @@
+title: "Turkey metagenomics project - quality control"
+subtitle: "PRJEB39685"
+
+intro_text: |
+  FastQC and fastp summary for the selected metagenomic samples.
+
+report_comment: |
+  Samples were processed with fastp using paired-end adapter detection,
+  Q20 filtering, and a minimum read length of 50 bp.
+
+top_modules:
+  - fastp
+  - fastqc

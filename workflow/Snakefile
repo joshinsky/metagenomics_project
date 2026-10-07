@@ -1,0 +1,13 @@
+configfile: "config/config.yaml"
+
+with open(config["paths"]["accessions"]) as f:
+    SAMPLES = [acc.strip() for acc in f if acc.strip()]
+
+print("SAMPLES:", SAMPLES)
+
+include: "rules/qc.smk"
+include: "rules/multiqc.smk"
+
+rule all:
+    input:
+        config["paths"]["results_dir"] + "/multiqc/qc_report.html"

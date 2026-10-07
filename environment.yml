@@ -1,0 +1,37 @@
+name: turkey_metagenomics
+
+channels:
+  - conda-forge
+  - bioconda
+
+channel_priority: strict
+
+dependencies:
+  - python=3.14
+  - pip
+  - snakemake
+  - pyyaml
+  - pandas
+  - numpy
+
+  - fastqc
+  - fastp
+  - multiqc
+
+  - bbmap
+  - samtools
+  - seqkit
+  - pigz
+
+  - kraken2
+  - bracken
+  - kma
+
+  - spades
+  - metabat2
+
+  - r-base=4.5
+  - r-tidyverse
+  - r-optparse
+  - r-data.table
+  - r-compositions
